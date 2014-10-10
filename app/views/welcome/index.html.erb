@@ -1,3 +1,7 @@
 <% if can? :say_hi ,@user %>
 <p>Hi </p>
+<%= link_to 'Sign_out' , destroy_user_session_path, method: :delete %>
+<% end %>
+<% if can? :say_bye ,@user %>
+<p>Bye </p>
 <% end %>
