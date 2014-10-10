@@ -45,3 +45,7 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
+#adding mysql
+
+gem 'mysql2'
+
