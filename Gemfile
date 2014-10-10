@@ -49,3 +49,7 @@ gem 'devise'
 
 gem 'mysql2'
 
+
+#cancan gem
+
+gem "cancan"
