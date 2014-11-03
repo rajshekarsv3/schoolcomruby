@@ -53,3 +53,16 @@ gem 'mysql2'
 #cancan gem
 
 gem "cancan"
+
+
+
+#bootstrap
+
+gem 'bootstrap-sass', '~> 3.3.0'
+
+
+gem 'autoprefixer-rails'
+
+#AngularJs
+
+gem 'angularjs-rails', '~> 1.3.0'
