@@ -5,11 +5,23 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
        user ||= User.new # guest user (not logged in)
-       if user.role_id == 1
-         can :say_hi
-       else
-         can :say_bye
-       end
+       role_array = user.roles.pluck(:role);
+       role_array.map! {|i| i.to_sym}
+       if user.roles.count==0
+            can :has_guest_role
+        else
+            can role_array
+        end
+
+
+       
+    #can :has_super_user_role if user.roles==1
+
+
+
+    #can :has_guest_role unless user.roles
+       
+       
     #
     # The first argument to `can` is the action you are giving the user 
     # permission to do.
